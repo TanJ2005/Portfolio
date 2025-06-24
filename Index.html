@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanmay | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2a5298;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
+      font-size: 0.9rem;
+    }
+
+    .greeting {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tanmay Jagushte</h1>
+    <p>20 Years Old | B.Sc I.T Student | Python Enthusiast</p>
+    <div class="greeting" id="greeting"></div>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I'm Tanmay, a passionate student of B.Sc I.T with a strong interest in Python programming. I enjoy learning new technologies and building projects that solve real problems.</p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python (Core + Basics of OOP)</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Basic SQL</li>
+        <li>Version Control: Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:tanmay@example.com">tanmay@example.com</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/tanmay</a></p>
+      <p>GitHub: <a href="#" target="_blank">github.com/tanmay</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Tanmay Jagushte. All rights reserved.
+  </footer>
+
+  <script>
+    const hour = new Date().getHours();
+    const greeting = document.getElementById("greeting");
+    let message = "Welcome to my portfolio!";
+    if (hour < 12) {
+      message = "Good morning! Welcome to my portfolio.";
+    } else if (hour < 18) {
+      message = "Good afternoon! Glad you're here.";
+    } else {
+      message = "Good evening! Hope you enjoy browsing.";
+    }
+    greeting.textContent = message;
+  </script>
+
+</body>
+</html>
